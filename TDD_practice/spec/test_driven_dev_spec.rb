@@ -63,4 +63,26 @@ describe Array do
     end
 
 end 
+
 #outside of ends
+
+describe '#stock_picker' do 
+    context 'input is not an array' do 
+        it 'should raise wrong TypeError' do 
+            arr = {}
+            expect{stock_picker(arr)}.to raise_error(TypeError)
+        end 
+    end 
+    context 'input is an array' do 
+        context 'array length < 2 ' do 
+            it 'should raise "Not Enough Days" error' do 
+                empty,one = [],[1]
+                expect{stock_picker(empty)}.to raise_error("Not Enough Days")
+                expect{stock_picker(one)}.to raise_error("Not Enough Days")
+            end 
+        end 
+        context 'array length >1 ' do 
+            
+        end 
+    end 
+end 

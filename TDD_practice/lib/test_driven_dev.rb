@@ -28,15 +28,12 @@ class Array
         end
         new_arr
     end
-
-    
-
-
-
-
-
-
 end 
 
+#assume stock array is 1d array, where indices are the prices 
 
 
+def stock_picker (arr)
+    raise TypeError unless arr.is_a?(Array)
+    raise "Not Enough Days" if arr.length < 2
+end 
