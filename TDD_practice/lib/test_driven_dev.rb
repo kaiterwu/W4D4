@@ -16,4 +16,8 @@ class Array
         end 
         arr 
     end
+
+    def my_transpose
+        raise "wrong 2d array" unless self.all? {|ele| ele.is_a?(Array)}
+    end
 end 

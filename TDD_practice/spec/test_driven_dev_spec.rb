@@ -40,4 +40,24 @@ describe Array do
 
     end
 
+    describe '#my_transpose' do
+        context "not a 2d array" do
+            it 'should raise a "wrong 2d array" error' do
+                arr = [1,2,3]
+                expect {arr.my_transpose}.to raise_error("wrong 2d array")     
+            end
+        end
+        context 'is a 2d array' do
+            rows = [[0,1,2],[3,4,5], [6,7,8]]
+            cols = [[0,3,6], [1,4,7], [2,5,8]]
+            it 'should not call the "oh so amazing transpose method" ok??' do
+
+            end
+            it 'should return a transposed array' do
+
+                expect(rows.transpose).to eq(cols)
+            end
+        end
+    end
+
 end 
