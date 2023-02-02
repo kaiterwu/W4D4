@@ -81,8 +81,8 @@ describe '#stock_picker' do
                 expect{stock_picker(one)}.to raise_error("Not Enough Days")
             end 
         end 
-        context 'array length >1 ' do 
-            
+        context 'array length >1 ' do
+            it "should return a pa"
         end 
     end 
 end 

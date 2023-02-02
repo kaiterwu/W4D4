@@ -36,4 +36,5 @@ end
 def stock_picker (arr)
     raise TypeError unless arr.is_a?(Array)
     raise "Not Enough Days" if arr.length < 2
+    
 end 
