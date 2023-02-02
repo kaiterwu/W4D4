@@ -19,6 +19,24 @@ class Array
 
     def my_transpose
         raise "wrong 2d array" unless self.all? {|ele| ele.is_a?(Array)}
-        self.transpose
+
+        new_arr = Array.new(self.length) {Array.new(self[0].length)}
+        self.each_index do |i|
+            self.each_index do |j|
+                new_arr[i][j] = self[j][i]
+            end
+        end
+        new_arr
     end
+
+    
+
+
+
+
+
+
 end 
+
+
+

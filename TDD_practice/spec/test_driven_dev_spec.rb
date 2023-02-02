@@ -58,7 +58,9 @@ describe Array do
 
                 expect(rows.my_transpose).to eq(cols)
             end
+
         end
     end
 
 end 
+#outside of ends
